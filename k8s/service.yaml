@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: engineering-rag
+
+spec:
+  selector:
+    app: engineering-rag
+
+  ports:
+    - port: 80
+      targetPort: 8000
+
+  type: ClusterIP
